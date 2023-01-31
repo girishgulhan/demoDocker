@@ -1,5 +1,5 @@
-FROM openjdk:11-jdk-alpine
+FROM openjdk:13-jdk-alpine
 
-ADD target/helloapp.jar helloapp.jar
+ADD target/hello.jar hello.jar
 
-ENTRYPOINT ["java", "jar","helloapp.jar"]
+ENTRYPOINT ["java", "jar","hello.jar"]
